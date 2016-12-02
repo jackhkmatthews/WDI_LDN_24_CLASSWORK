@@ -1,0 +1,38 @@
+body {
+  background: red;
+  color: white;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+div {
+  border: 3px solid white;
+  border-radius: 20px;
+  width: 50%;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+p {
+  color: yellow;
+  font-weight: bold;
+}
+div.box {
+  width: 50%;
+  margin: 10px auto;
+  padding: 0;
+}
+
+.box.one {
+  height: 40px;
+}
+.box.two {
+  height: 10px;
+}
+.box.three {
+  height: 2.5px;
+}
+.box.four {
+  height: 0.5px;
+}
