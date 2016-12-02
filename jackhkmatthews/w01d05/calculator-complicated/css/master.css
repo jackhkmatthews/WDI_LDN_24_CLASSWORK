@@ -1,0 +1,19 @@
+body {
+  background: red;
+  padding: 75px 0 0 0;
+}
+
+
+ul {
+    margin: 0 auto;
+    width: 135px;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul li ul li {
+    display: inline-block;
+}
