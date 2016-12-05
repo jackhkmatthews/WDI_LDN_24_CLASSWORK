@@ -1,0 +1,39 @@
+body {
+  background: #0d3c55;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+ul.grid {
+    background: white;
+}
+
+h1 {
+    color: white;
+}
+
+ul.grid {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+li {
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    float: left;
+    list-style: none;
+    box-sizing: border-box;
+    color: white;
+}
+
+li.X {
+    background: #f16c20;
+}
+
+li.O {
+    background: #a2b86c;
+}

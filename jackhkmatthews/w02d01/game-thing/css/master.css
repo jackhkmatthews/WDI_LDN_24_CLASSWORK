@@ -1,0 +1,26 @@
+body {
+  background-color: blue;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+    float: left;
+    background: white;
+    list-style: none;
+}
+
+li:hover {
+    background: orange;
+}
+
+ul {
+    width: 400px;
+    height: 400px;
+    margin: 30px auto;
+    padding: 0;
+}
+
+.light {
+  background: yellow;
+}
