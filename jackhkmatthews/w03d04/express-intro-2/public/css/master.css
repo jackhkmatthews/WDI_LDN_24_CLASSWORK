@@ -1,0 +1,10 @@
+body {
+  background-color: pink;
+  text-align: center;
+}
+
+body h1 {
+  background-color: grey;
+  color: white;
+  border-radius: 50px;
+}
