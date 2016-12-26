@@ -1,0 +1,11 @@
+.navbar.navbar-default {
+  margin-bottom: 0;
+}
+
+#homeJumbotron {
+  min-height: 500px;
+  background-image: url('/images/home.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
