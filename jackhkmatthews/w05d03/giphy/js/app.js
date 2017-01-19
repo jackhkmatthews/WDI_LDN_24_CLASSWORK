@@ -11,7 +11,7 @@ var start = function start(){
       if (index === 0 || index %4 === 0) {
         html += '<div class="row">';
       }
-      html += '<div class="col-xs-6 col-md-3"><a href="#"class="thumbnail"><img src="' + gifObject.images.fixed_height.url + '"img></a></div>';
+      html += '<div class="col-xs-6 col-md-3"><a href="' + gifObject.images.fixed_height.url + '" class="thumbnail"><img src="' + gifObject.images.fixed_height.url + '"img></a></div>';
       if (index === 3 || (index + 1)%4 === 0 || index === (gifsArray.length - 1)) {
         html += '</div>';
         $('.row.gifs').append(html);
@@ -38,7 +38,7 @@ var start = function start(){
           if (index === 0 || index %4 === 0) {
             html += '<div class="row">';
           }
-          html += '<div class="col-xs-6 col-md-3"><a href="#"class="thumbnail"><img src="' + gifObject.images.fixed_height.url + '"img></a></div>';
+          html += '<div class="col-xs-6 col-md-3"><a href="' + gifObject.images.fixed_height.url + '" class="thumbnail"><img src="' + gifObject.images.fixed_height.url + '"img></a></div>';
           if (index === 3 || (index + 1)%4 === 0 || index === (gifsArray.length - 1)) {
             html += '</div>';
             $('.row.gifs').append(html);
@@ -64,7 +64,7 @@ var start = function start(){
           if (index === 0 || index %4 === 0) {
             html += '<div class="row">';
           }
-          html += '<div class="col-xs-6 col-md-3"><a href="#"class="thumbnail"><img src="' + gifObject.images.fixed_height.url + '"img></a></div>';
+          html += '<div class="col-xs-6 col-md-3"><a href="' + gifObject.images.fixed_height.url + '" class="thumbnail"><img src="' + gifObject.images.fixed_height.url + '"img></a></div>';
           if (index === 3 || (index + 1)%4 === 0 || index === (gifsArray.length - 1)) {
             html += '</div>';
             $('.row.gifs').append(html);

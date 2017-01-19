@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="leapFrog">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Controllers 2-way binding</title>
+    <!-- inject:js -->
+    <!-- endinject -->
+    <!-- inject:css -->
+    <!-- endinject -->
+  </head>
+  <body>
+    <header>
+      <h1>Metro Museum Of Art</h1>
+      <img src="http://photovide.com/wp-content/uploads/2013/11/Hipsters/most-hipster-things-ever-9-1.jpg" alt="hipsters">
+    </header>
+    <main  ng-controller="ExhibitCtrl as exhibit">
+      <h2>Current Exhibit</h2>
+      <div ng-repeat="(key, value) in exhibit.currentExhibit">{{key}}: {{value}}</div>
+      <h2>Next Exhibit</h2>
+      <div ng-repeat="(key, value) in exhibit.nextExhibit">{{key}}: {{value}}</div>
+    </main>
+    <aside class=""  ng-controller="OperationsCtrl as operations">
+      <h2>Operations</h2>
+      <h3>Opening Times</h3>
+        <ul>
+          <li>Monday to Friday: {{operations.hours.weekdays.opening }} - {{operations.hours.weekdays.closing }}</li>
+          <li>Saturday to Sunday: {{operations.hours.weekends.opening }} - {{operations.hours.weekends.opening }}</li>
+        </ul>
+      <h3>Address</h3>
+      <ul>
+        <li>{{operations.address.number}} {{operations.address.street}}</li>
+        <li>{{operations.address.town }}</li>
+        <li>{{operations.address.city }}</li>
+        <li>{{operations.address.postCode }}</li>
+      </ul>
+      <h3>Phone</h3>
+      <p>{{operations.phone}}</p>
+    </aside>
+    <aside class=""  ng-controller="DonorsCtrl as donors">
+      <h2>Donors</h2>
+      <h3>Head of Museum</h3>
+      <ul>
+        <li>{{donors.headOfMuseam.name}}</li>
+        <li>{{donors.headOfMuseam.phone}}</li>
+        <li>{{donors.headOfMuseam.email }}</li>
+      </ul>
+      <h3>Donation details</h3>
+      <p>We accept donations of estimated value between £{{donors.donations.estMinValue}}0 and £{{donors.donations.estMaxValue}}.00</p>
+      <p>We accept donations in the from of:</p>
+      <ul>
+        <li ng-repeat="x in donors.donations.types">{{ x }}</li>
+      </ul>
+    </aside>
+    <footer>
+      <p>JM and JM</p>
+    </footer>
+  </body>
+</html>

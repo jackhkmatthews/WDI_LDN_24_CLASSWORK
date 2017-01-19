@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="toDoApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Directives Lesson</title>
+    <!-- inject:js -->
+    <!-- endinject -->
+    <!-- inject:css -->
+    <!-- endinject -->
+  </head>
+  <body ng-controller="ToDosCtrl as todos">
+    <header>
+      <h1>Angular to do app</h1>
+      <h2>You have {{todos.items.length}} todos to do!</h2>
+    </header>
+    <main>
+      <form class="" id="addTodo" ng-submit="todos.addItem()">
+        <input type="text" placeholder="task to be added" ng-model="todos.newItem.task">
+        <input type="submit" value="Add">
+      </form>
+      <p ng-if="todos.newItem.task">About to add: <strong>{{todos.newItem.task}}</strong></p>
+      <ol>
+        <li ng-repeat="item in todos.items">
+          <p>{{item.task}}</p>
+          <button type="button" name="button" ng-click="todos.done(item)">Delete</button>
+        </li>
+      </ol>
+    </main>
+  </body>
+</html>

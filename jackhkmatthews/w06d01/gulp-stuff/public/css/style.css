@@ -1,0 +1,11 @@
+body h2 {
+
+    background: blue;
+}
+
+body h1 {
+
+    background: red;
+
+    border-radius: 10px;
+}
