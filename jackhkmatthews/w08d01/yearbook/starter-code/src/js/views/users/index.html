@@ -1,0 +1,12 @@
+<h1>Users</h1>
+<div class="row">
+  <div class="col-xs-6 col-sm-4 col-md-3" ng-repeat="user in users.users track by $index">
+    <div class="thumbnail">
+      <img src="{{user.image}}" alt="Bill Murray">
+      <div class="caption">
+        <h3>{{user.name}}</h3>
+        <p><a ui-sref="usersShow({id: user._id})">Show</a></p>
+      </div>
+    </div>
+  </div>
+</div>

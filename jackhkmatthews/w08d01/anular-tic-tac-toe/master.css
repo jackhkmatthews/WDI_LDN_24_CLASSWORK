@@ -1,0 +1,32 @@
+body {
+  background: linear-gradient(to left, rgb(0, 4, 40), rgb(0, 78, 146));
+  color: white;
+  font-family: monospace;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 50px;
+}
+
+ul {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  padding: 0;
+  border: 2px solid white;
+}
+
+li {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 2px solid white;
+  list-style: none;
+  line-height: 200px;
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.2)
+}

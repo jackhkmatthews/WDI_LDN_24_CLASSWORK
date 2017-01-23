@@ -1,0 +1,10 @@
+<h1>Edit User</h1>
+<form name="updateUser" ng-submit="usersEdit.update()">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input class="form-control" type="text" id="name" placeholder="name" ng-model="usersEdit.user.name">
+    <label for="image">Image</label>
+    <input class="form-control" type="text" id="image" placeholder="image" ng-model="usersEdit.user.image">
+  </div>
+  <input type="submit" class="btn btn-primary">
+</form>

@@ -1,0 +1,10 @@
+<h1>Add User</h1>
+<form name="newUser" ng-submit="usersNew.create()">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input class="form-control" type="text" id="name" placeholder="name" ng-model="usersNew.user.name">
+    <label for="image">Image</label>
+    <input class="form-control" type="text" id="image" placeholder="image" ng-model="usersNew.user.image">
+  </div>
+  <input type="submit" class="btn btn-primary">
+</form>

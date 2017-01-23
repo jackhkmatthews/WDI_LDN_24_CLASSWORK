@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="happyApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Stack Setup</title>
+    <!-- inject:js -->
+    <!-- endinject -->
+    <!-- inject:css -->
+    <!-- endinject -->
+  </head>
+  <body ng-controller="homeCtrl as home">
+    <h1>HAPPYAPP</h1>
+    <ul>
+      <li ng-repeat="day in home.happyHistory track by $index">
+        {{ day.day }}:  {{ day.happy }}
+      </li>
+    </ul>
+    <form>
+      <button ng-click="home.selectedHappiness = 'Happy'" type="button" name="button">Happy</button>
+      <button ng-click="home.selectedHappiness = 'Meh'" type="button" name="button">Meh</button>
+      <button ng-click="home.selectedHappiness = 'Sad'" type="button" name="button">Sad</button>
+      <p>{{home.selectedHappiness}}</p>
+      <input type="submit" value="Save Happiness" ng-click="home.submit()">
+    </form>
+  </body>
+</html>
