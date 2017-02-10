@@ -1,0 +1,11 @@
+body {
+  font-family: helvetica;
+  color: white;
+  width: 900px;
+  margin: 0 auto
+}
+
+div {
+  font: bold 72px helvetica;
+  margin-top: 50px;
+}

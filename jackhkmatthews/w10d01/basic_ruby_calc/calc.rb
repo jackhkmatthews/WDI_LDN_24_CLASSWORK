@@ -14,7 +14,7 @@
 # end
 #
 # puts "corectoooo"
-# 
+#
 # puts "What is pi to 10 decimal places?"
 #
 # answer = gets.to_f
@@ -31,7 +31,7 @@
 #   next unless answer == pi
 #   puts "fook me you're a clever one.....lol you're still an idiot"
 # end
-
+#
 puts `clear`
 
 lives = 5
